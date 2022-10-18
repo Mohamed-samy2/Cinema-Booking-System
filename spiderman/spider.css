@@ -1,0 +1,15 @@
+.body {
+    box-sizing: border-box;
+
+}
+
+.spider {
+    width: 1308px;
+    height: 832px;
+}
+
+.spider video {
+    width: 438px;
+    height: 260px;
+    transform: translate(-26px, -46px);
+}

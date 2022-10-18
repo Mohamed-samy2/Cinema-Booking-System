@@ -1,0 +1,1011 @@
+  ISSI - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly EASendMail, Version=7.9.0.1, Culture=neutral, PublicKeyToken=88adb80ecd66540b: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class EASendMail.AddressCollection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IList`1[EASendMail.MailAddress]
+    System.Collections.Generic.ICollection`1[EASendMail.MailAddress]
+    System.Collections.Generic.IEnumerable`1[EASendMail.MailAddress]
+    System.Collections.IEnumerable
+  Properties:
+    EASendMail.MailAddress Item [Int32] 'get set' : 
+    Int32 Count 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, MailAddress): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Add(MailAddress): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(String): PrivateScope, Public, HideBySig
+    AddRange(IEnumerable`1): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(MailAddress): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CopyTo(MailAddress[], Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IndexOf(MailAddress): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Insert(Int32, MailAddress): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    InsertRange(Int32, IEnumerable`1): PrivateScope, Public, HideBySig
+    Remove(MailAddress): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Remove(String): PrivateScope, Public, HideBySig
+    RemoveAt(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    FindIndex(Predicate`1): PrivateScope, Public, HideBySig
+    Find(Predicate`1): PrivateScope, Public, HideBySig
+    FindLast(Predicate`1): PrivateScope, Public, HideBySig
+    FindAll(Predicate`1): PrivateScope, Public, HideBySig
+    ToArray(): PrivateScope, Public, HideBySig
+    RemoveAll(Predicate`1): PrivateScope, Public, HideBySig
+    op_Implicit(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    ToString(Int32, Int32): PrivateScope, Public, HideBySig
+    ToEncodedString(HeaderEncodingType, String): PrivateScope, Public, HideBySig
+    Copy(): PrivateScope, Public, HideBySig
+    SplitbyDomain(): PrivateScope, Public, HideBySig
+Class EASendMail.Attachment: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :EASendMail.MimePart
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    EASendMail.TransferEncodingType TransferEncoding 'get set' : 
+    System.String Name 'get set' : 
+    System.String Path 'get ' : 
+    System.String ContentID 'get set' : 
+    Int32 EncodedLength 'get ' : 
+    Byte[] EncodedContent 'get ' : 
+    Boolean IsBodyText 'get set' : 
+  Methods:
+    get_TransferEncoding(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_TransferEncoding(TransferEncodingType): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Path(): PrivateScope, Public, HideBySig, SpecialName
+    get_ContentID(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ContentID(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_EncodedLength(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_EncodedContent(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Load(String): PrivateScope, Public, HideBySig
+    Load(String, Byte[]): PrivateScope, Public, HideBySig
+    get_IsBodyText(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_IsBodyText(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class EASendMail.OAuthResponseParser: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.DateTime AccessTokenTimestamp 'get ' : 
+    System.String AccessToken 'get set' : 
+    System.String RefreshToken 'get set' : 
+    System.String IdToken 'get ' : 
+    Int32 TokenExpiresInSeconds 'get set' : 
+    System.String EmailInIdToken 'get set' : 
+  Methods:
+    Load(String): PrivateScope, Public, HideBySig
+    get_AccessTokenTimestamp(): PrivateScope, Public, HideBySig, SpecialName
+    get_AccessToken(): PrivateScope, Public, HideBySig, SpecialName
+    set_AccessToken(String): PrivateScope, Public, HideBySig, SpecialName
+    get_RefreshToken(): PrivateScope, Public, HideBySig, SpecialName
+    set_RefreshToken(String): PrivateScope, Public, HideBySig, SpecialName
+    get_IdToken(): PrivateScope, Public, HideBySig, SpecialName
+    get_TokenExpiresInSeconds(): PrivateScope, Public, HideBySig, SpecialName
+    set_TokenExpiresInSeconds(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_EmailInIdToken(): PrivateScope, Public, HideBySig, SpecialName
+    set_EmailInIdToken(String): PrivateScope, Public, HideBySig, SpecialName
+    SaveToFile(String): PrivateScope, Public, HideBySig
+    LoadFromFile(String): PrivateScope, Public, HideBySig
+Class EASendMail.SimpleJsonParser: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ParseArray(String): PrivateScope, Public, Static, HideBySig
+    GetJsonInt(String, String): PrivateScope, Public, Static, HideBySig
+    GetJsonString(String, String): PrivateScope, Public, Static, HideBySig
+    GetJsonBool(String, String): PrivateScope, Public, Static, HideBySig
+    GetJsonValue(String, String): PrivateScope, Public, Static, HideBySig
+    DecodeJwtPlayload(String): PrivateScope, Public, Static, HideBySig
+    SignRs256(Certificate, String): PrivateScope, Public, Static, HideBySig
+    SignRs256WithPrivateKey(String, String): PrivateScope, Public, Static, HideBySig
+    JwtBase64UrlDecode(String): PrivateScope, Public, Static, HideBySig
+    Base64UrlEncode(Byte[]): PrivateScope, Public, Static, HideBySig
+Class EASendMail.Certificate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 CERT_FIND_ANY : Public, Static, InitOnly
+    UInt32 CERT_FIND_SUBJECT_STR : Public, Static, InitOnly
+    UInt32 CERT_FIND_SHA1_HASH : Public, Static, InitOnly
+    UInt32 CERT_FIND_SUBJECT_NAME : Public, Static, InitOnly
+  Properties:
+    Boolean HasCertificate 'get ' : 
+    EASendMail.Certificate[] IssuerCertificates 'get ' : 
+    Boolean HasPrivateKey 'get ' : 
+    Boolean DeleteKeyContainer 'get set' : 
+    IntPtr Context 'get set' : 
+    System.String ThumbPrint 'get ' : 
+    System.String SerialNumber 'get ' : 
+    System.DateTime NotBefore 'get ' : 
+    System.DateTime NotAfter 'get ' : 
+    System.String Issuer 'get ' : 
+    System.String Subject 'get ' : 
+    System.String PublicKey 'get ' : 
+    IntPtr Handle 'get set' : 
+    IntPtr Store 'get set' : 
+  Methods:
+    get_HasCertificate(): PrivateScope, Public, HideBySig, SpecialName
+    get_IssuerCertificates(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasPrivateKey(): PrivateScope, Public, HideBySig, SpecialName
+    get_DeleteKeyContainer(): PrivateScope, Public, HideBySig, SpecialName
+    set_DeleteKeyContainer(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Context(): PrivateScope, Public, HideBySig, SpecialName
+    set_Context(IntPtr): PrivateScope, Public, HideBySig, SpecialName
+    get_ThumbPrint(): PrivateScope, Public, HideBySig, SpecialName
+    get_SerialNumber(): PrivateScope, Public, HideBySig, SpecialName
+    get_NotBefore(): PrivateScope, Public, HideBySig, SpecialName
+    get_NotAfter(): PrivateScope, Public, HideBySig, SpecialName
+    get_Issuer(): PrivateScope, Public, HideBySig, SpecialName
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    get_PublicKey(): PrivateScope, Public, HideBySig, SpecialName
+    get_Handle(): PrivateScope, Public, HideBySig, SpecialName
+    set_Handle(IntPtr): PrivateScope, Public, HideBySig, SpecialName
+    get_Store(): PrivateScope, Public, HideBySig, SpecialName
+    set_Store(IntPtr): PrivateScope, Public, HideBySig, SpecialName
+    Load(Byte[], String, CertificateKeyLocation): PrivateScope, Public, HideBySig
+    Load(String, String, CertificateKeyLocation): PrivateScope, Public, HideBySig
+    Load(Byte[]): PrivateScope, Public, HideBySig
+    LoadEncryptCertAuto(String): PrivateScope, Public, HideBySig
+    LoadbySubject(String, String): PrivateScope, Public, HideBySig
+    Load(String): PrivateScope, Public, HideBySig
+    FindCertificates(String, CertificateStoreLocation, String): PrivateScope, Public, Static, HideBySig
+    FindThumbprint(String, CertificateStoreLocation, String): PrivateScope, Public, HideBySig
+    FindSubject(String, CertificateStoreLocation, String): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    Unload(): PrivateScope, Public, HideBySig
+Struct EASendMail.Certificate+CertificateStoreLocation: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CertificateStoreLocation CERT_SYSTEM_STORE_CURRENT_USER = 65536 : Public, Static, Literal, HasDefault
+    CertificateStoreLocation CERT_SYSTEM_STORE_LOCAL_MACHINE = 131072 : Public, Static, Literal, HasDefault
+    CertificateStoreLocation CERT_SYSTEM_STORE_CURRENT_SERVICE = 262144 : Public, Static, Literal, HasDefault
+    CertificateStoreLocation CERT_SYSTEM_STORE_SERVICES = 327680 : Public, Static, Literal, HasDefault
+    CertificateStoreLocation CERT_STORE_PROV_LDAP_STORE = 16 : Public, Static, Literal, HasDefault
+Struct EASendMail.Certificate+CertificateKeyLocation: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CertificateKeyLocation CRYPT_MACHINE_KEYSET = 32 : Public, Static, Literal, HasDefault
+    CertificateKeyLocation CRYPT_USER_KEYSET = 4096 : Public, Static, Literal, HasDefault
+Struct EASendMail.OaepHashAlgorithmType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.OaepHashAlgorithmType SHA1 = 0 : Public, Static, Literal, HasDefault
+    EASendMail.OaepHashAlgorithmType SHA256 = 1 : Public, Static, Literal, HasDefault
+    EASendMail.OaepHashAlgorithmType SHA384 = 2 : Public, Static, Literal, HasDefault
+    EASendMail.OaepHashAlgorithmType SHA512 = 3 : Public, Static, Literal, HasDefault
+Struct EASendMail.EncryptionAlgorithmType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.EncryptionAlgorithmType ENCRYPTION_ALGORITHM_RC2 = 0 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType ENCRYPTION_ALGORITHM_RC4 = 1 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType ENCRYPTION_ALGORITHM_DES = 2 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType ENCRYPTION_ALGORITHM_3DES = 3 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType ENCRYPTION_ALGORITHM_AES128 = 4 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType ENCRYPTION_ALGORITHM_AES192 = 5 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType ENCRYPTION_ALGORITHM_AES256 = 6 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType RAES_PKCS1_v15_128 = 7 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType RAES_PKCS1_v15_192 = 8 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType RAES_PKCS1_v15_256 = 9 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType RAES_OAEP_128 = 10 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType RAES_OAEP_192 = 11 : Public, Static, Literal, HasDefault
+    EASendMail.EncryptionAlgorithmType RAES_OAEP_256 = 12 : Public, Static, Literal, HasDefault
+Struct EASendMail.SignatureHashAlgorithmType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.SignatureHashAlgorithmType SHA1 = 0 : Public, Static, Literal, HasDefault
+    EASendMail.SignatureHashAlgorithmType SHA256 = 1 : Public, Static, Literal, HasDefault
+    EASendMail.SignatureHashAlgorithmType SHA384 = 2 : Public, Static, Literal, HasDefault
+    EASendMail.SignatureHashAlgorithmType SHA512 = 3 : Public, Static, Literal, HasDefault
+    EASendMail.SignatureHashAlgorithmType MD5 = 4 : Public, Static, Literal, HasDefault
+Struct EASendMail.SignatureHashEncryptionType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.SignatureHashEncryptionType Default = 0 : Public, Static, Literal, HasDefault
+    EASendMail.SignatureHashEncryptionType RSA_SSA_PSS = 1 : Public, Static, Literal, HasDefault
+    EASendMail.SignatureHashEncryptionType RSA_SSA_PSS_WITH_PARAMETER = 2 : Public, Static, Literal, HasDefault
+Struct EASendMail.DkimHashAlgorithm: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.DkimHashAlgorithm Sha1 = 0 : Public, Static, Literal, HasDefault
+    EASendMail.DkimHashAlgorithm Sha256 = 1 : Public, Static, Literal, HasDefault
+Struct EASendMail.DkimCanonMethod: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.DkimCanonMethod Nofws = 0 : Public, Static, Literal, HasDefault
+    EASendMail.DkimCanonMethod Simple = 1 : Public, Static, Literal, HasDefault
+Class EASendMail.DkimConfig: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Domain 'get set' : 
+    System.String Selector 'get set' : 
+    System.String PrivateKey 'get set' : 
+    System.String HeadersToSign 'get set' : 
+    Boolean IsSignHeaderOnly 'get set' : 
+    EASendMail.DkimHashAlgorithm RsaHashAlgorithm 'get set' : 
+    EASendMail.DkimCanonMethod CanonAlgorithm 'get set' : 
+    System.String PublicKey 'get ' : 
+  Methods:
+    get_Domain(): PrivateScope, Public, HideBySig, SpecialName
+    set_Domain(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Selector(): PrivateScope, Public, HideBySig, SpecialName
+    set_Selector(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PrivateKey(): PrivateScope, Public, HideBySig, SpecialName
+    set_PrivateKey(String): PrivateScope, Public, HideBySig, SpecialName
+    get_HeadersToSign(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeadersToSign(String): PrivateScope, Public, HideBySig, SpecialName
+    get_IsSignHeaderOnly(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsSignHeaderOnly(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_RsaHashAlgorithm(): PrivateScope, Public, HideBySig, SpecialName
+    set_RsaHashAlgorithm(DkimHashAlgorithm): PrivateScope, Public, HideBySig, SpecialName
+    get_CanonAlgorithm(): PrivateScope, Public, HideBySig, SpecialName
+    set_CanonAlgorithm(DkimCanonMethod): PrivateScope, Public, HideBySig, SpecialName
+    LoadFromJson(String): PrivateScope, Public, HideBySig
+    LoadFromFile(String): PrivateScope, Public, HideBySig
+    ToJson(): PrivateScope, Public, HideBySig
+    get_PublicKey(): PrivateScope, Public, HideBySig, SpecialName
+    SaveToFile(String, Boolean): PrivateScope, Public, HideBySig
+Class EASendMail.DnsQueryEx: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    QueryServers(String, String): PrivateScope, Public, Static, HideBySig
+    QueryServers(String): PrivateScope, Public, Static, HideBySig
+Class EASendMail.HeaderCollection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IList`1[EASendMail.HeaderItem]
+    System.Collections.Generic.ICollection`1[EASendMail.HeaderItem]
+    System.Collections.Generic.IEnumerable`1[EASendMail.HeaderItem]
+    System.Collections.IEnumerable
+  Properties:
+    EASendMail.HeaderItem Item [Int32] 'get set' : 
+    Int32 Count 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+  Methods:
+    get_Item(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, HeaderItem): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Add(HeaderItem): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(String): PrivateScope, Public, HideBySig
+    Add(String, String): PrivateScope, Public, HideBySig
+    AddRange(IEnumerable`1): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(HeaderItem): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CopyTo(HeaderItem[], Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IndexOf(HeaderItem): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Insert(Int32, HeaderItem): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    InsertRange(Int32, IEnumerable`1): PrivateScope, Public, HideBySig
+    Remove(HeaderItem): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Remove(String): PrivateScope, Public, HideBySig
+    RemoveAt(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    FindIndex(Predicate`1): PrivateScope, Public, HideBySig
+    Find(Predicate`1): PrivateScope, Public, HideBySig
+    FindLast(Predicate`1): PrivateScope, Public, HideBySig
+    FindAll(Predicate`1): PrivateScope, Public, HideBySig
+    ToArray(): PrivateScope, Public, HideBySig
+    RemoveAll(Predicate`1): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    ToString(Int32, Int32): PrivateScope, Public, HideBySig
+    Copy(): PrivateScope, Public, HideBySig
+    ReplaceHeader(HeaderItem): PrivateScope, Public, HideBySig
+    ReplaceHeader(String, String): PrivateScope, Public, HideBySig
+    ReplaceHeader(String): PrivateScope, Public, HideBySig
+    SearchKey(String): PrivateScope, Public, HideBySig
+    RemoveKey(String): PrivateScope, Public, HideBySig
+    GetValueOfKey(String): PrivateScope, Public, HideBySig
+Class EASendMail.HeaderItem: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String HeaderKey 'get set' : 
+    Boolean ShowAnyway 'get set' : 
+    System.String HeaderValue 'get set' : 
+  Methods:
+    op_Implicit(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_HeaderKey(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderKey(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowAnyway(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowAnyway(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_HeaderValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderValue(String): PrivateScope, Public, HideBySig, SpecialName
+    SubValue(String): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Copy(): PrivateScope, Public, HideBySig
+Class EASendMail.MailAddress: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Additional 'get set' : 
+    System.String Name 'get set' : 
+    System.String Address 'get set' : 
+    System.String UnicodeAddress 'get ' : 
+    EASendMail.Certificate Certificate 'get set' : 
+  Methods:
+    op_Implicit(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    GetAddressDomain(): PrivateScope, Public, HideBySig
+    get_Additional(): PrivateScope, Public, HideBySig, SpecialName
+    set_Additional(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Address(): PrivateScope, Public, HideBySig, SpecialName
+    set_Address(String): PrivateScope, Public, HideBySig, SpecialName
+    get_UnicodeAddress(): PrivateScope, Public, HideBySig, SpecialName
+    get_Certificate(): PrivateScope, Public, HideBySig, SpecialName
+    set_Certificate(Certificate): PrivateScope, Public, HideBySig, SpecialName
+    Copy(): PrivateScope, Public, HideBySig
+    ToRcptToString(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    ToEncodedString(HeaderEncodingType, String): PrivateScope, Public, HideBySig
+Class EASendMail.MimePart: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    EASendMail.HeaderEncodingType HeaderEncoding 'get set' : 
+    System.String Name 'get set' : 
+    System.String ReportType 'get set' : 
+    System.String ContentID 'get set' : 
+    System.String Boundary 'get set' : 
+    System.String Source 'get ' : 
+    Byte[] UnencodeContent 'get set' : 
+    Int32 EncodedLength 'get ' : 
+    Byte[] EncodedContent 'get ' : 
+    Boolean IsBodyText 'get set' : 
+    EASendMail.TransferEncodingType TransferEncoding 'get set' : 
+    System.String Charset 'get set' : 
+    EASendMail.HeaderCollection Headers 'get ' : 
+    EASendMail.MimePartCollection MimeParts 'get ' : 
+  Methods:
+    get_HeaderEncoding(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HeaderEncoding(HeaderEncodingType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Name(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ReportType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReportType(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ContentID(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ContentID(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Boundary(): PrivateScope, Public, HideBySig, SpecialName
+    set_Boundary(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Source(): PrivateScope, Public, HideBySig, SpecialName
+    get_UnencodeContent(): PrivateScope, Public, HideBySig, SpecialName
+    set_UnencodeContent(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_EncodedLength(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SaveAs(String, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_EncodedContent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsBodyText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_IsBodyText(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TransferEncoding(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TransferEncoding(TransferEncodingType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Charset(): PrivateScope, Public, HideBySig, SpecialName
+    set_Charset(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Headers(): PrivateScope, Public, HideBySig, SpecialName
+    get_MimeParts(): PrivateScope, Public, HideBySig, SpecialName
+Class EASendMail.MimePartCollection: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Collections.ArrayList
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object Item [Int32] 'get set' : 
+  Methods:
+    Add(Object): PrivateScope, Public, Virtual, HideBySig
+    Add(MimePart): PrivateScope, Public, HideBySig
+    Add(Attachment): PrivateScope, Public, HideBySig
+    Insert(Int32, Object): PrivateScope, Public, Virtual, HideBySig
+    AddRange(ICollection): PrivateScope, Public, Virtual, HideBySig
+    InsertRange(Int32, ICollection): PrivateScope, Public, Virtual, HideBySig
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Item(Int32, Object): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ExistSource(String): PrivateScope, Public, HideBySig
+    ExistAttachment(String): PrivateScope, Public, HideBySig
+    SetRange(Int32, ICollection): PrivateScope, Public, Virtual, HideBySig
+Struct EASendMail.HeaderEncodingType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.HeaderEncodingType EncodingAuto = 0 : Public, Static, Literal, HasDefault
+    EASendMail.HeaderEncodingType EncodingQuotedPrintable = 1 : Public, Static, Literal, HasDefault
+    EASendMail.HeaderEncodingType EncodingBase64 = 2 : Public, Static, Literal, HasDefault
+    EASendMail.HeaderEncodingType EncodingNone = 3 : Public, Static, Literal, HasDefault
+Struct EASendMail.ImportHtmlBodyOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.ImportHtmlBodyOptions NoOptions = 0 : Public, Static, Literal, HasDefault
+    EASendMail.ImportHtmlBodyOptions ImportLocalPictures = 1 : Public, Static, Literal, HasDefault
+    EASendMail.ImportHtmlBodyOptions ImportHttpPictures = 2 : Public, Static, Literal, HasDefault
+    EASendMail.ImportHtmlBodyOptions ImportCss = 4 : Public, Static, Literal, HasDefault
+    EASendMail.ImportHtmlBodyOptions ErrorThrowException = 8 : Public, Static, Literal, HasDefault
+Struct EASendMail.ImportTextBodyOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.ImportTextBodyOptions NoOptions = 0 : Public, Static, Literal, HasDefault
+    EASendMail.ImportTextBodyOptions ConvertHtmlToText = 1 : Public, Static, Literal, HasDefault
+Struct EASendMail.MailPriority: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.MailPriority Normal = 0 : Public, Static, Literal, HasDefault
+    EASendMail.MailPriority High = 1 : Public, Static, Literal, HasDefault
+    EASendMail.MailPriority Low = 2 : Public, Static, Literal, HasDefault
+Struct EASendMail.MailStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.MailStyle EASendMailStyle = 0 : Public, Static, Literal, HasDefault
+    EASendMail.MailStyle OutlookExpressStyle = 1 : Public, Static, Literal, HasDefault
+    EASendMail.MailStyle OutlookStyle = 2 : Public, Static, Literal, HasDefault
+Struct EASendMail.QuotedPrintableEncodingType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.QuotedPrintableEncodingType EncodingText = 0 : Public, Static, Literal, HasDefault
+    EASendMail.QuotedPrintableEncodingType EncodingBinary = 1 : Public, Static, Literal, HasDefault
+    EASendMail.QuotedPrintableEncodingType EncodingHeader = 2 : Public, Static, Literal, HasDefault
+Struct EASendMail.TransferEncodingType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.TransferEncodingType Encoding7bit = 0 : Public, Static, Literal, HasDefault
+    EASendMail.TransferEncodingType Encoding8bit = 1 : Public, Static, Literal, HasDefault
+    EASendMail.TransferEncodingType EncodingQuotedPrintable = 2 : Public, Static, Literal, HasDefault
+    EASendMail.TransferEncodingType EncodingBase64 = 3 : Public, Static, Literal, HasDefault
+    EASendMail.TransferEncodingType Encoding8bitNoWrap = 4 : Public, Static, Literal, HasDefault
+Struct EASendMail.DeliveryNotificationOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.DeliveryNotificationOptions None = 0 : Public, Static, Literal, HasDefault
+    EASendMail.DeliveryNotificationOptions OnSuccess = 2 : Public, Static, Literal, HasDefault
+    EASendMail.DeliveryNotificationOptions OnFailure = 4 : Public, Static, Literal, HasDefault
+    EASendMail.DeliveryNotificationOptions Delay = 8 : Public, Static, Literal, HasDefault
+    EASendMail.DeliveryNotificationOptions Never = 16 : Public, Static, Literal, HasDefault
+Class EASendMail.SmtpMail: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    EASendMail.Certificate DKCertificate 'get set' : 
+    Boolean SMIMERFCCompatibility 'get set' : 
+    Boolean IgnoreDeliveryNotificationError 'get set' : 
+    System.String ReportType 'get set' : 
+    Boolean AutoCalendar 'get set' : 
+    Boolean EnableSigningTime 'get set' : 
+    Boolean DetachedSignature 'get set' : 
+    System.String DKContent 'get set' : 
+    EASendMail.DkimConfig DkimSignerConfig 'get set' : 
+    EASendMail.EncryptionAlgorithmType EncryptionAlgorithm 'get set' : 
+    EASendMail.OaepHashAlgorithmType OaepHashAlgorithm 'get set' : 
+    EASendMail.SignatureHashAlgorithmType SignatureHashAlgorithm 'get set' : 
+    EASendMail.SignatureHashEncryptionType SignatureHashEncryption 'get set' : 
+    EASendMail.DeliveryNotificationOptions DeliveryNotification 'get set' : 
+    Boolean ReadReceipt 'get set' : 
+    System.String Mailer 'get set' : 
+    System.DateTime Date 'get set' : 
+    System.String MessageID 'get ' : 
+    EASendMail.AddressCollection Recipients 'get ' : 
+    Boolean AutoTextBody 'get set' : 
+    System.String MimeSplitor 'get set' : 
+    EASendMail.MailPriority Priority 'get set' : 
+    EASendMail.MailStyle Style 'get set' : 
+    EASendMail.TransferEncodingType TransferEncoding 'get set' : 
+    EASendMail.HeaderEncodingType HeaderEncoding 'get set' : 
+    EASendMail.HeaderEncodingType AttachmentHeaderEncoding 'get set' : 
+    Byte[] EncodedContent 'get ' : 
+    System.String Charset 'get set' : 
+    EASendMail.MailAddress Sender 'get set' : 
+    EASendMail.MailAddress From 'get set' : 
+    EASendMail.MailAddress ReturnPath 'get set' : 
+    EASendMail.AddressCollection To 'get set' : 
+    EASendMail.AddressCollection Cc 'get set' : 
+    EASendMail.AddressCollection Bcc 'get set' : 
+    EASendMail.MailAddress ReplyTo 'get set' : 
+    System.String Subject 'get set' : 
+    System.String TextBody 'get set' : 
+    System.String AmpBody 'get set' : 
+    System.String HtmlBody 'get set' : 
+    EASendMail.HeaderCollection Headers 'get ' : 
+    EASendMail.MimePartCollection MimeParts 'get ' : 
+  Events:
+    AfterMessageHeaderGeneratedEventHandler AfterMessageHeaderGenerated: 
+  Methods:
+    ImportHtml(String, String, ImportHtmlBodyOptions): PrivateScope, Public, HideBySig
+    SaveAs(String, Boolean): PrivateScope, Public, HideBySig
+    get_EncodedContent(): PrivateScope, Public, HideBySig, SpecialName
+    get_Charset(): PrivateScope, Public, HideBySig, SpecialName
+    set_Charset(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Sender(): PrivateScope, Public, HideBySig, SpecialName
+    set_Sender(MailAddress): PrivateScope, Public, HideBySig, SpecialName
+    get_From(): PrivateScope, Public, HideBySig, SpecialName
+    set_From(MailAddress): PrivateScope, Public, HideBySig, SpecialName
+    get_ReturnPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReturnPath(MailAddress): PrivateScope, Public, HideBySig, SpecialName
+    get_To(): PrivateScope, Public, HideBySig, SpecialName
+    set_To(AddressCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_Cc(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cc(AddressCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_Bcc(): PrivateScope, Public, HideBySig, SpecialName
+    set_Bcc(AddressCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_ReplyTo(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReplyTo(MailAddress): PrivateScope, Public, HideBySig, SpecialName
+    get_Subject(): PrivateScope, Public, HideBySig, SpecialName
+    set_Subject(String): PrivateScope, Public, HideBySig, SpecialName
+    get_TextBody(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextBody(String): PrivateScope, Public, HideBySig, SpecialName
+    ImportTextBody(String, ImportTextBodyOptions): PrivateScope, Public, HideBySig
+    ImportHtmlBody(String, ImportHtmlBodyOptions): PrivateScope, Public, HideBySig
+    get_AmpBody(): PrivateScope, Public, HideBySig, SpecialName
+    set_AmpBody(String): PrivateScope, Public, HideBySig, SpecialName
+    get_HtmlBody(): PrivateScope, Public, HideBySig, SpecialName
+    set_HtmlBody(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Headers(): PrivateScope, Public, HideBySig, SpecialName
+    get_MimeParts(): PrivateScope, Public, HideBySig, SpecialName
+    add_AfterMessageHeaderGenerated(AfterMessageHeaderGeneratedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_AfterMessageHeaderGenerated(AfterMessageHeaderGeneratedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_DKCertificate(): PrivateScope, Public, HideBySig, SpecialName
+    set_DKCertificate(Certificate): PrivateScope, Public, HideBySig, SpecialName
+    get_SMIMERFCCompatibility(): PrivateScope, Public, HideBySig, SpecialName
+    set_SMIMERFCCompatibility(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IgnoreDeliveryNotificationError(): PrivateScope, Public, HideBySig, SpecialName
+    set_IgnoreDeliveryNotificationError(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ReportType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReportType(String): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoCalendar(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoCalendar(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_EnableSigningTime(): PrivateScope, Public, HideBySig, SpecialName
+    set_EnableSigningTime(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DetachedSignature(): PrivateScope, Public, HideBySig, SpecialName
+    set_DetachedSignature(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DKContent(): PrivateScope, Public, HideBySig, SpecialName
+    set_DKContent(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DkimSignerConfig(): PrivateScope, Public, HideBySig, SpecialName
+    set_DkimSignerConfig(DkimConfig): PrivateScope, Public, HideBySig, SpecialName
+    get_EncryptionAlgorithm(): PrivateScope, Public, HideBySig, SpecialName
+    set_EncryptionAlgorithm(EncryptionAlgorithmType): PrivateScope, Public, HideBySig, SpecialName
+    get_OaepHashAlgorithm(): PrivateScope, Public, HideBySig, SpecialName
+    set_OaepHashAlgorithm(OaepHashAlgorithmType): PrivateScope, Public, HideBySig, SpecialName
+    get_SignatureHashAlgorithm(): PrivateScope, Public, HideBySig, SpecialName
+    set_SignatureHashAlgorithm(SignatureHashAlgorithmType): PrivateScope, Public, HideBySig, SpecialName
+    get_SignatureHashEncryption(): PrivateScope, Public, HideBySig, SpecialName
+    set_SignatureHashEncryption(SignatureHashEncryptionType): PrivateScope, Public, HideBySig, SpecialName
+    AddAttachment(String): PrivateScope, Public, HideBySig
+    AddAttachment(String, Byte[]): PrivateScope, Public, HideBySig
+    get_DeliveryNotification(): PrivateScope, Public, HideBySig, SpecialName
+    set_DeliveryNotification(DeliveryNotificationOptions): PrivateScope, Public, HideBySig, SpecialName
+    get_ReadReceipt(): PrivateScope, Public, HideBySig, SpecialName
+    set_ReadReceipt(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    LoadMessage(Byte[]): PrivateScope, Public, HideBySig
+    LoadMessage(String): PrivateScope, Public, HideBySig
+    RemoveAttachment(String): PrivateScope, Public, HideBySig
+    ClearAttachments(): PrivateScope, Public, HideBySig
+    Reset(): PrivateScope, Public, HideBySig
+    get_Mailer(): PrivateScope, Public, HideBySig, SpecialName
+    set_Mailer(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Date(): PrivateScope, Public, HideBySig, SpecialName
+    set_Date(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    ResetMessageID(): PrivateScope, Public, HideBySig
+    get_MessageID(): PrivateScope, Public, HideBySig, SpecialName
+    get_Recipients(): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoTextBody(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoTextBody(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_MimeSplitor(): PrivateScope, Public, HideBySig, SpecialName
+    set_MimeSplitor(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Priority(): PrivateScope, Public, HideBySig, SpecialName
+    set_Priority(MailPriority): PrivateScope, Public, HideBySig, SpecialName
+    get_Style(): PrivateScope, Public, HideBySig, SpecialName
+    set_Style(MailStyle): PrivateScope, Public, HideBySig, SpecialName
+    get_TransferEncoding(): PrivateScope, Public, HideBySig, SpecialName
+    set_TransferEncoding(TransferEncodingType): PrivateScope, Public, HideBySig, SpecialName
+    get_HeaderEncoding(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeaderEncoding(HeaderEncodingType): PrivateScope, Public, HideBySig, SpecialName
+    get_AttachmentHeaderEncoding(): PrivateScope, Public, HideBySig, SpecialName
+    set_AttachmentHeaderEncoding(HeaderEncodingType): PrivateScope, Public, HideBySig, SpecialName
+Class EASendMail.SmtpMail+AfterMessageHeaderGeneratedEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, HeaderCollection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, HeaderCollection, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct EASendMail.IPv6PolicyOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.IPv6PolicyOptions Default = 0 : Public, Static, Literal, HasDefault
+    EASendMail.IPv6PolicyOptions IPv6_Prefer = 1 : Public, Static, Literal, HasDefault
+    EASendMail.IPv6PolicyOptions IPv6_Disable = 2 : Public, Static, Literal, HasDefault
+Class EASendMail.ProxyServerException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ErrorCode 'get set' : 
+    System.String Message 'get ' : 
+    System.String ErrorMessage 'get set' : 
+  Methods:
+    get_ErrorCode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorCode(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ErrorMessage(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorMessage(String): PrivateScope, Public, HideBySig, SpecialName
+Struct EASendMail.ServerProtocol: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.ServerProtocol SMTP = 0 : Public, Static, Literal, HasDefault
+    EASendMail.ServerProtocol ExchangeEWS = 1 : Public, Static, Literal, HasDefault
+    EASendMail.ServerProtocol ExchangeWebDav = 2 : Public, Static, Literal, HasDefault
+    EASendMail.ServerProtocol GmailApi = 3 : Public, Static, Literal, HasDefault
+    EASendMail.ServerProtocol MsGraphApi = 4 : Public, Static, Literal, HasDefault
+Struct EASendMail.SmtpAuthType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.SmtpAuthType AuthAuto = 0 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpAuthType AuthLogin = 1 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpAuthType AuthPlain = 2 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpAuthType AuthCRAM5 = 3 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpAuthType AuthNTLM = 4 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpAuthType AuthMSN = 5 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpAuthType XOAUTH2 = 6 : Public, Static, Literal, HasDefault
+Class EASendMail.SmtpClient: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Int32 Timeout 'get set' : 
+    EASendMail.IPv6PolicyOptions IPv6Policy 'get set' : 
+    System.Net.EndPoint BindEndPoint 'get set' : 
+    System.Net.EndPoint BindEndPoint6 'get set' : 
+    Boolean SaveCopy 'get set' : 
+    Boolean NativeSSLMode 'get set' : 
+    System.Object Tag 'get set' : 
+    EASendMail.AddressCollection RecipientsFailed 'get set' : 
+    Boolean RcptToErrorContinue 'get set' : 
+    System.String DnsServerIP 'get set' : 
+    Boolean IsSSLConnection 'get set' : 
+    EASendMail.SmtpServer CurrentSmtpServer 'get set' : 
+    System.String SmtpConversation 'get ' : 
+    System.String LogFileName 'get set' : 
+  Events:
+    OnConnectedEventHandler OnConnected: 
+    OnSendCommandEventHandler OnSendCommand: 
+    OnReceiveResponseEventHandler OnReceiveResponse: 
+    OnIdleEventHandler OnIdle: 
+    OnSendingDataStreamEventHandler OnSendingDataStream: 
+    OnAuthorizedEventHandler OnAuthorized: 
+    OnSecuringEventHandler OnSecuring: 
+    OnSecuredEventHandler OnSecured: 
+    OnQuitEventHandler OnQuit: 
+    OnRcptToErrorEventHandler OnRcptToError: 
+    OnBatchSendMailEventHandler OnBatchSendMail: 
+  Methods:
+    ReadRawResponse(): PrivateScope, Public, HideBySig
+    BatchSendMail(Int32, SmtpServer[], SmtpMail[]): PrivateScope, Public, HideBySig
+    BeginConnect(SmtpServer, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndConnect(SmtpClientAsyncResult): PrivateScope, Public, HideBySig
+    BeginSendMail(SmtpServer, SmtpMail, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    BeginSendMail(SmtpMail, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndSendMail(SmtpClientAsyncResult): PrivateScope, Public, HideBySig
+    BeginSendRawMail(SmtpServer, Byte[], MailAddress, AddressCollection, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    BeginSendRawMail(Byte[], MailAddress, AddressCollection, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndSendRawMail(SmtpClientAsyncResult): PrivateScope, Public, HideBySig
+    BeginTestRecipients(SmtpServer, SmtpMail, AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndTestRecipients(SmtpClientAsyncResult): PrivateScope, Public, HideBySig
+    BeginQuit(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndQuit(SmtpClientAsyncResult): PrivateScope, Public, HideBySig
+    BeginReset(AsyncCallback, Object): PrivateScope, Public, HideBySig
+    EndReset(SmtpClientAsyncResult): PrivateScope, Public, HideBySig
+    SendMailToQueueEx(String, SmtpServer, SmtpMail): PrivateScope, Public, HideBySig
+    SendMailToQueue(SmtpServer, SmtpMail): PrivateScope, Public, HideBySig
+    CancelMailInQueue(String, String): PrivateScope, Public, HideBySig
+    PostToRemoteQueue(SmtpServer, SmtpMail, String, String, String, String): PrivateScope, Public, HideBySig
+    Close(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    add_OnConnected(OnConnectedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnConnected(OnConnectedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnSendCommand(OnSendCommandEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnSendCommand(OnSendCommandEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnReceiveResponse(OnReceiveResponseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnReceiveResponse(OnReceiveResponseEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnIdle(OnIdleEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnIdle(OnIdleEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnSendingDataStream(OnSendingDataStreamEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnSendingDataStream(OnSendingDataStreamEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnAuthorized(OnAuthorizedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnAuthorized(OnAuthorizedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnSecuring(OnSecuringEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnSecuring(OnSecuringEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnSecured(OnSecuredEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnSecured(OnSecuredEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnQuit(OnQuitEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnQuit(OnQuitEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnRcptToError(OnRcptToErrorEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnRcptToError(OnRcptToErrorEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnBatchSendMail(OnBatchSendMailEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnBatchSendMail(OnBatchSendMailEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_Timeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_Timeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_IPv6Policy(): PrivateScope, Public, HideBySig, SpecialName
+    set_IPv6Policy(IPv6PolicyOptions): PrivateScope, Public, HideBySig, SpecialName
+    get_BindEndPoint(): PrivateScope, Public, HideBySig, SpecialName
+    set_BindEndPoint(EndPoint): PrivateScope, Public, HideBySig, SpecialName
+    get_BindEndPoint6(): PrivateScope, Public, HideBySig, SpecialName
+    set_BindEndPoint6(EndPoint): PrivateScope, Public, HideBySig, SpecialName
+    get_SaveCopy(): PrivateScope, Public, HideBySig, SpecialName
+    set_SaveCopy(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_NativeSSLMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativeSSLMode(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Tag(): PrivateScope, Public, HideBySig, SpecialName
+    set_Tag(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_RecipientsFailed(): PrivateScope, Public, HideBySig, SpecialName
+    get_RcptToErrorContinue(): PrivateScope, Public, HideBySig, SpecialName
+    set_RcptToErrorContinue(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_DnsServerIP(): PrivateScope, Public, HideBySig, SpecialName
+    set_DnsServerIP(String): PrivateScope, Public, HideBySig, SpecialName
+    get_IsSSLConnection(): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentSmtpServer(): PrivateScope, Public, HideBySig, SpecialName
+    get_SmtpConversation(): PrivateScope, Public, HideBySig, SpecialName
+    get_LogFileName(): PrivateScope, Public, HideBySig, SpecialName
+    set_LogFileName(String): PrivateScope, Public, HideBySig, SpecialName
+    SendMail(SmtpServer, SmtpMail): PrivateScope, Public, HideBySig
+    Connect(SmtpServer): PrivateScope, Public, HideBySig
+    TestRecipients(SmtpServer, SmtpMail): PrivateScope, Public, HideBySig
+    SendRawMail(SmtpServer, Byte[], MailAddress, AddressCollection): PrivateScope, Public, HideBySig
+    SendRawMail(Byte[], MailAddress, AddressCollection): PrivateScope, Public, HideBySig
+    SendMail(SmtpMail): PrivateScope, Public, HideBySig
+    Reset(): PrivateScope, Public, HideBySig
+    Quit(): PrivateScope, Public, HideBySig
+    SendRawCommand(String): PrivateScope, Public, HideBySig
+Class EASendMail.SmtpClient+OnConnectedEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnQuitEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnSendingDataStreamEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Int32, Int32, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Int32, Int32, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnIdleEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnRcptToErrorEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, String, String, Boolean&, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, String, String, Boolean&, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnAuthorizedEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnSecuringEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnSecuredEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SslStream, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SslStream, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnReceiveResponseEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Byte[], Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Byte[], Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnSendCommandEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Byte[], Boolean, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, Byte[], Boolean, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClient+OnBatchSendMailEventHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, SmtpServer, SmtpMail, Exception, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, SmtpServer, SmtpMail, Exception, Boolean&, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(Boolean&, IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class EASendMail.SmtpClientAsyncResult: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    System.IAsyncResult
+  Properties:
+    EASendMail.SmtpClient SmtpClientInstance 'get ' : 
+    System.Object AsyncState 'get ' : 
+    System.Threading.WaitHandle AsyncWaitHandle 'get ' : 
+    Boolean CompletedSynchronously 'get ' : 
+    Boolean IsCompleted 'get ' : 
+  Methods:
+    BeginConnect(SmtpClient, SmtpServer, AsyncCallback, Object): PrivateScope, Public, Static, HideBySig
+    EndConnect(SmtpClientAsyncResult, SmtpClient): PrivateScope, Public, Static, HideBySig
+    BeginSendMail(SmtpClient, SmtpServer, SmtpMail, AsyncCallback, Object): PrivateScope, Public, Static, HideBySig
+    BeginSendMail(SmtpClient, SmtpMail, AsyncCallback, Object): PrivateScope, Public, Static, HideBySig
+    EndSendMail(SmtpClientAsyncResult, SmtpClient): PrivateScope, Public, Static, HideBySig
+    BeginSendRawMail(SmtpClient, SmtpServer, Byte[], MailAddress, AddressCollection, AsyncCallback, Object): PrivateScope, Public, Static, HideBySig
+    BeginSendRawMail(SmtpClient, Byte[], MailAddress, AddressCollection, AsyncCallback, Object): PrivateScope, Public, Static, HideBySig
+    EndSendRawMail(SmtpClientAsyncResult, SmtpClient): PrivateScope, Public, Static, HideBySig
+    BeginTestRecipients(SmtpClient, SmtpServer, SmtpMail, AsyncCallback, Object): PrivateScope, Public, Static, HideBySig
+    EndTestRecipients(SmtpClientAsyncResult, SmtpClient): PrivateScope, Public, Static, HideBySig
+    BeginQuit(SmtpClient, AsyncCallback, Object): PrivateScope, Public, Static, HideBySig
+    EndQuit(SmtpClientAsyncResult, SmtpClient): PrivateScope, Public, Static, HideBySig
+    BeginReset(SmtpClient, AsyncCallback, Object): PrivateScope, Public, Static, HideBySig
+    EndReset(SmtpClientAsyncResult, SmtpClient): PrivateScope, Public, Static, HideBySig
+    get_SmtpClientInstance(): PrivateScope, Public, HideBySig, SpecialName
+    get_AsyncState(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AsyncWaitHandle(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CompletedSynchronously(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsCompleted(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Struct EASendMail.SmtpConnectType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.SmtpConnectType ConnectNormal = 0 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpConnectType ConnectSSLAuto = 1 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpConnectType ConnectSTARTTLS = 2 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpConnectType ConnectDirectSSL = 3 : Public, Static, Literal, HasDefault
+    EASendMail.SmtpConnectType ConnectTryTLS = 4 : Public, Static, Literal, HasDefault
+Class EASendMail.SmtpServer: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Server 'get set' : 
+    Int32 Port 'get set' : 
+    System.String User 'get set' : 
+    System.String Password 'get set' : 
+    System.String HeloDomain 'get set' : 
+    EASendMail.SmtpConnectType ConnectType 'get set' : 
+    EASendMail.SmtpAuthType AuthType 'get set' : 
+    EASendMail.ServerProtocol Protocol 'get set' : 
+    Boolean EHLO 'get set' : 
+    Boolean PIPELINING 'get set' : 
+    System.String SaveCopyUser 'get set' : 
+    System.String EWSImpersonatedUser 'get set' : 
+    Boolean UseDefaultCredentials 'get set' : 
+    System.String SocksProxyServer 'get set' : 
+    System.String SocksProxyUser 'get set' : 
+    System.String SocksProxyPassword 'get set' : 
+    EASendMail.SocksProxyProtocol ProxyProtocol 'get set' : 
+    Int32 SocksProxyPort 'get set' : 
+    UInt16 MXPreference 'get set' : 
+    EASendMail.DeliveryNotificationOptions DeliveryNotification 'get set' : 
+    Boolean IgnoreDeliveryNotificationError 'get set' : 
+    System.String Alias 'get set' : 
+    System.String Drafts 'get set' : 
+    System.String MailFrom 'get set' : 
+  Methods:
+    op_Implicit(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Server(): PrivateScope, Public, HideBySig, SpecialName
+    set_Server(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Port(): PrivateScope, Public, HideBySig, SpecialName
+    set_Port(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_User(): PrivateScope, Public, HideBySig, SpecialName
+    set_User(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Password(): PrivateScope, Public, HideBySig, SpecialName
+    set_Password(String): PrivateScope, Public, HideBySig, SpecialName
+    get_HeloDomain(): PrivateScope, Public, HideBySig, SpecialName
+    set_HeloDomain(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConnectType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConnectType(SmtpConnectType): PrivateScope, Public, HideBySig, SpecialName
+    get_AuthType(): PrivateScope, Public, HideBySig, SpecialName
+    set_AuthType(SmtpAuthType): PrivateScope, Public, HideBySig, SpecialName
+    get_Protocol(): PrivateScope, Public, HideBySig, SpecialName
+    set_Protocol(ServerProtocol): PrivateScope, Public, HideBySig, SpecialName
+    get_EHLO(): PrivateScope, Public, HideBySig, SpecialName
+    set_EHLO(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_PIPELINING(): PrivateScope, Public, HideBySig, SpecialName
+    set_PIPELINING(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SaveCopyUser(): PrivateScope, Public, HideBySig, SpecialName
+    set_SaveCopyUser(String): PrivateScope, Public, HideBySig, SpecialName
+    get_EWSImpersonatedUser(): PrivateScope, Public, HideBySig, SpecialName
+    set_EWSImpersonatedUser(String): PrivateScope, Public, HideBySig, SpecialName
+    get_UseDefaultCredentials(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseDefaultCredentials(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_SocksProxyServer(): PrivateScope, Public, HideBySig, SpecialName
+    set_SocksProxyServer(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SocksProxyUser(): PrivateScope, Public, HideBySig, SpecialName
+    set_SocksProxyUser(String): PrivateScope, Public, HideBySig, SpecialName
+    get_SocksProxyPassword(): PrivateScope, Public, HideBySig, SpecialName
+    set_SocksProxyPassword(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ProxyProtocol(): PrivateScope, Public, HideBySig, SpecialName
+    set_ProxyProtocol(SocksProxyProtocol): PrivateScope, Public, HideBySig, SpecialName
+    get_SocksProxyPort(): PrivateScope, Public, HideBySig, SpecialName
+    set_SocksProxyPort(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_MXPreference(): PrivateScope, Public, HideBySig, SpecialName
+    set_MXPreference(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_DeliveryNotification(): PrivateScope, Public, HideBySig, SpecialName
+    set_DeliveryNotification(DeliveryNotificationOptions): PrivateScope, Public, HideBySig, SpecialName
+    get_IgnoreDeliveryNotificationError(): PrivateScope, Public, HideBySig, SpecialName
+    set_IgnoreDeliveryNotificationError(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Alias(): PrivateScope, Public, HideBySig, SpecialName
+    set_Alias(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Drafts(): PrivateScope, Public, HideBySig, SpecialName
+    set_Drafts(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MailFrom(): PrivateScope, Public, HideBySig, SpecialName
+    set_MailFrom(String): PrivateScope, Public, HideBySig, SpecialName
+    Copy(): PrivateScope, Public, HideBySig
+    ToConversationString(): PrivateScope, Public, HideBySig
+    Validate(): PrivateScope, Public, HideBySig
+Class EASendMail.SmtpServerException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsAuthenticationError 'get ' : 
+    System.String ErrorCode 'get set' : 
+    System.String Message 'get ' : 
+    System.String ErrorMessage 'get set' : 
+    System.String PreviousCommand 'get set' : 
+    EASendMail.SmtpServer Server 'get set' : 
+    System.String SmtpConversation 'get set' : 
+  Methods:
+    get_IsAuthenticationError(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorCode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorCode(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ErrorMessage(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorMessage(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PreviousCommand(): PrivateScope, Public, HideBySig, SpecialName
+    set_PreviousCommand(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Server(): PrivateScope, Public, HideBySig, SpecialName
+    set_Server(SmtpServer): PrivateScope, Public, HideBySig, SpecialName
+    get_SmtpConversation(): PrivateScope, Public, HideBySig, SpecialName
+    set_SmtpConversation(String): PrivateScope, Public, HideBySig, SpecialName
+Class EASendMail.SmtpTerminatedException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Message 'get ' : 
+  Methods:
+    get_Message(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Struct EASendMail.SocksProxyProtocol: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EASendMail.SocksProxyProtocol Socks4 = 0 : Public, Static, Literal, HasDefault
+    EASendMail.SocksProxyProtocol Socks5 = 1 : Public, Static, Literal, HasDefault
+    EASendMail.SocksProxyProtocol Http = 2 : Public, Static, Literal, HasDefault

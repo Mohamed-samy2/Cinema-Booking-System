@@ -1,0 +1,4 @@
+E:\Ain shams cinema\Ain_shams_cinema\Debug\Ain_shams_cinema.vcxproj.AssemblyReference.cache
+E:\Ain shams cinema\Ain_shams_cinema\Debug\Ain_shams_cinema.exe
+E:\Ain shams cinema\Ain_shams_cinema\Debug\Ainshamscinema.MyForm.resources
+E:\Ain shams cinema\Ain_shams_cinema\Debug\Ain_shams_cinema.vcxproj.GenerateResource.cache
